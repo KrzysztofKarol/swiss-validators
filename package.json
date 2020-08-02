@@ -1,0 +1,13 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "lerna": "^3.22.1",
+    "mocha": "^8.1.0"
+  },
+  "scripts": {
+    "lerna": "lerna",
+    "test": "mocha \"packages/**/*.test.js\""
+  }
+}
