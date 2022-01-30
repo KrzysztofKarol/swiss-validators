@@ -5,15 +5,9 @@
   "description": "Swiss documents validator",
   "author": "Krzysztof Karol <krzysztof.karol@gmail.com>",
   "homepage": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "license": "ISC",
-  "main": "lib/validator.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   }

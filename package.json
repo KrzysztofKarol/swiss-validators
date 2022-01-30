@@ -2,12 +2,25 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "chai": "^4.2.0",
-    "lerna": "^3.22.1",
-    "mocha": "^8.1.0"
+    "@babel/core": "7.16.12",
+    "@babel/preset-env": "7.16.11",
+    "@babel/preset-typescript": "7.16.7",
+    "@types/jest": "27.4.0",
+    "babel-jest": "27.4.6",
+    "jest": "27.4.7",
+    "lerna": "4.0.0",
+    "prettier": "2.5.1",
+    "ts-node": "10.4.0",
+    "typescript": "4.5.5"
   },
   "scripts": {
     "lerna": "lerna",
-    "test": "mocha \"packages/**/*.test.js\""
+    "prettier:write": "prettier --write .",
+    "test": "jest"
+  },
+  "dependencies": {
+    "swiss-validator": "file:packages/validator",
+    "swissid": "file:packages/swissid",
+    "swisspass": "file:packages/swisspass"
   }
 }

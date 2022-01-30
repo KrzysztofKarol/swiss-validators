@@ -23,6 +23,6 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "swiss-validator": "^0.0.1-alpha.0"
+    "swiss-validator": "0.0.1-alpha.0"
   }
 }
