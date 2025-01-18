@@ -1,3 +1,4 @@
+import { describe, it, expect } from "vitest";
 import validator from "swiss-validator";
 
 describe("swissid", () => {
