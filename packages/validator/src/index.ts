@@ -22,8 +22,8 @@ function validator({
     .split("")
     .map((idNumberPart) =>
       idNumberPart.replace(/[A-Z]/, (letter) =>
-        (letter.charCodeAt(0) - 55).toString()
-      )
+        (letter.charCodeAt(0) - 55).toString(),
+      ),
     )
     .map(Number);
   const idNumberCheckDigitNum = Number(idNumberCheckDigit);
@@ -57,7 +57,7 @@ function isCheckDigitValid(numbersArr: number[], checkDigit: number) {
   const sum = numbersArr.reduce(
     // @ts-ignore i mod 3 is always 0, 1 or 2
     (acc, digit, i) => acc + digit * wages[i % wages.length],
-    0
+    0,
   );
   const remainder = sum % 10;
 
