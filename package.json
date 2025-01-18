@@ -11,8 +11,6 @@
     "test": "vitest"
   },
   "workspaces": [
-    "packages/swissid",
-    "packages/swisspass",
-    "packages/validator"
+    "packages/*"
   ]
 }
